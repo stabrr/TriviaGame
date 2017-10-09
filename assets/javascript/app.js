@@ -6,7 +6,7 @@ $("#start").on('click',function(){
 	//sets timer to countdown
 	timer=setInterval(trivia.countdown,1000);
 	//displaying the time
-	$("#game").html('<h2 id=clock>Time Remaining</h2>');	
+	$("#game").html('<h3 id=clock>Time Remaining</h3>');	
 	//loop will list quest and create radio buttons with possible answers 
 	for (var i=0;i<questions.length;i++){	
 		//display question in object questions	
@@ -64,7 +64,7 @@ var trivia = {
 	correct:0,
 	wrong: 0,
 	unanswered:0,
-	clock: 15,
+	clock: 60,
 	//timer feature before results are shown
 	countdown: function(){
 		trivia.clock--;
