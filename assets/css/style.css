@@ -1,11 +1,12 @@
 body{
-	background: url(../../assets/images/uscap.jpg);
-	background-color: #5784c3;
+	/*background: url(../../assets/images/usa.png);*/
+	background-color: #3e4e63;
 	font-family: 'Concert One', cursive;
 }
 #game h2{
 	font-weight: bold;
 }
+
 
 #results{
 	background-color: #5784c3;
@@ -17,4 +18,4 @@ h1{
 	text-align: center;
 	color: black;
 }
-}
+
