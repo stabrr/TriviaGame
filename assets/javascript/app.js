@@ -1,4 +1,9 @@
 
+$(document).on('click','#done',function(){
+    	trivia.done();
+    });
+
+
 //when start is clicked the trivia questions show up
 $("#start").on('click',function(){
 	//removes the start button
@@ -16,6 +21,7 @@ $("#start").on('click',function(){
 			$("#game").append('<input id="choices" type="radio" name="capQuest'+i+'" value='+"'"+questions[i].answers[j]+"'"+'>'+questions[i].answers[j]+'  ');
 		}
 	}
+	$("#game").append('<br><button id="done">Done</button>');
 })
 //the object with questions, answers and the correct answer
 var questions = [{
